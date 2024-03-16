@@ -1,0 +1,329 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100%;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/fotbar1.jpg);
+  background-size: 100% 100%;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.hero h1,
+h4,
+p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: white;
+  background-color: var(--pink);
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.navbarku {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(4px);
+}
+
+.navbarku .offcanvas {
+  height: 100vh;
+  color: #0a0a0a;
+}
+
+.navbarku .navbar-brand,
+.navbarku .offcanvas-title {
+  font-family: "Rokkitt", serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbarku .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.utama {
+  position: relative;
+  background-color: #040d12;
+  height: 100%;
+  margin-top: -6.5rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  z-index: 1;
+}
+
+.home {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.home h2,
+.info h2,
+.rondown h2,
+.gallery h2,
+.donasi h2 {
+  font-family: "Sacramento", sans-serif;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow: 0 2px 2px red;
+  color: white;
+}
+
+.home h3 {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  text-shadow: none;
+  font-size: 1.1rem;
+  color: azure;
+}
+
+.presidium {
+  margin-top: 50px;
+}
+
+.home .presidium h3 {
+  font-family: "Rokkitt";
+  font-size: 2.5rem;
+}
+
+.home .presidium img {
+  width: 100%;
+}
+
+.penanda {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Sacramento";
+}
+
+.info {
+  margin-top: 100px;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .deskripsi {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+}
+
+.info .informasi {
+  padding: 20px;
+}
+
+.rondown,
+.donasi {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.rondown p,
+.gallery p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.susunan {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.susunan::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ddd;
+  left: 50%;
+}
+
+.susunan li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.susunan li::before,
+.susunan li::after {
+  content: "";
+  display: table;
+}
+
+.susunan li::after {
+  clear: both;
+}
+
+.susunan li .susunan-image {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  background-color: #ddd;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.susunan li .susunan-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #040d12;
+}
+
+.susunan li .susunan-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ddd;
+  border-right: 0 solid #ddd;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.susunan li .susunan-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #040d12;
+  border-right: 0 solid #0a0a0a;
+  border-bottom: 14px solid transparent;
+  top: 80.5px;
+  right: -14.5px;
+}
+
+.susunan li.susunan-inverted .susunan-panel {
+  float: right;
+}
+
+.susunan li.susunan-inverted .susunan-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.susunan li.susunan-inverted .susunan-panel::after {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.gallery {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+footer {
+  padding: 3rem;
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.audio-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  z-index: 1;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-toggler{
+  background-image: url('img/gradiasi.jpg');
+}
