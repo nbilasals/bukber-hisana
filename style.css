@@ -25,10 +25,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/fotbar1.jpg);
-  background-size: 100% 100%;
+  background-image: url(img/gallery/tiga.jpg);
+  background-size: 50% 100%;
   z-index: -1;
-  filter: blur(2px);
+  filter: blur(1.5px);
 }
 
 .hero h1,
@@ -38,8 +38,13 @@ p {
 }
 
 .hero h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 6rem;
+  font-family: "Brush Script MT", cursive;
+  font-size: 3rem;
+}
+
+.hero h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 3rem;
 }
 
 .hero h4 {
@@ -319,11 +324,12 @@ footer a {
   form {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-image: url('img/gradiasi.jpg');
 }
